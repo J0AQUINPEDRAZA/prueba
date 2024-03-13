@@ -1,0 +1,86 @@
+.sectionContainer {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.sectionBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 560px;
+  width: 100%;
+}
+
+.iconosContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  width: 100%;
+  height: 150px;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabla {
+  width: 100%;
+  height: 400px;
+  background-color: #ced4da;
+  border-radius: 14px;
+}
+
+.iconos {
+  background-color: darkmagenta;
+  height: 100%;
+  width: 100%;
+}
+
+.progresBarContainer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progresBar {
+  background-color: aqua;
+  height: 100%;
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .sectionContainer {
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 0px) {
+  .sectionContainer {
+    width: 100%;
+  }
+
+  .progresBarContainer {
+    height: 300px;
+    flex-direction: column;
+  }
+
+  .progresBar {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 460px) and (min-width: 0px) {
+  .sectionBox {
+  }
+  .iconosContainer {
+    height: 300px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
